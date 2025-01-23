@@ -38,6 +38,10 @@ The Board features the ZYNQ XC7Z020-1CLG400C SOC with
 
 # DPU synthesis on Device
 ![image](https://github.com/user-attachments/assets/bd9a7cdc-8f1e-499f-9552-d4893f72abba)
+
+# Utilization Report
+![image](https://github.com/user-attachments/assets/3daf28a6-26eb-47f2-8efd-06be26151a4e)
+
  
 # Tools used
 Xilinx Vivado 2020.1
