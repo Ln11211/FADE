@@ -30,7 +30,7 @@ The Board features the ZYNQ XC7Z020-1CLG400C SOC with
 - [ ] DNNDK Optimization of DL model
 - [ ] Deployment on PYNQ-Z2
 
-# DPU ip block design
+# Deep learning processing unit (DPU) ip block design
 ![image](https://github.com/user-attachments/assets/349b330e-1af6-40fe-9095-83f65f1ceee0)
 
 # DPU Schematic
@@ -39,3 +39,5 @@ The Board features the ZYNQ XC7Z020-1CLG400C SOC with
 # DPU synthesis on Device
 ![image](https://github.com/user-attachments/assets/bd9a7cdc-8f1e-499f-9552-d4893f72abba)
  
+# Tools used
+Xilinx Vivado 2020.1
