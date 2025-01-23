@@ -1,0 +1,170 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date             : Thu Jan 23 17:09:32 2025
+| Host             : LAPTOP-SBGOCP7B running 64-bit major release  (build 9200)
+| Command          : report_power -file pynqz2_dpu_wrapper_power_routed.rpt -pb pynqz2_dpu_wrapper_power_summary_routed.pb -rpx pynqz2_dpu_wrapper_power_routed.rpx
+| Design           : pynqz2_dpu_wrapper
+| Device           : xc7z020clg400-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 4.096        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 3.820        |
+| Device Static (W)        | 0.276        |
+| Effective TJA (C/W)      | 11.5         |
+| Max Ambient (C)          | 37.8         |
+| Junction Temperature (C) | 72.2         |
+| Confidence Level         | Medium       |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.368 |        7 |       --- |             --- |
+| Slice Logic              |     0.422 |   114707 |       --- |             --- |
+|   LUT as Logic           |     0.333 |    33743 |     53200 |           63.43 |
+|   Register               |     0.048 |    63220 |    106400 |           59.42 |
+|   CARRY4                 |     0.031 |     2939 |     13300 |           22.10 |
+|   LUT as Shift Register  |     0.006 |      350 |     17400 |            2.01 |
+|   LUT as Distributed RAM |     0.003 |     1394 |     17400 |            8.01 |
+|   F7/F8 Muxes            |    <0.001 |      307 |     53200 |            0.58 |
+|   Others                 |     0.000 |     2289 |       --- |             --- |
+| Signals                  |     1.071 |    93739 |       --- |             --- |
+| Block RAM                |     0.147 |      123 |       140 |           87.86 |
+| MMCM                     |     0.102 |        1 |         4 |           25.00 |
+| DSPs                     |     0.453 |      212 |       220 |           96.36 |
+| PS7                      |     1.257 |        1 |       --- |             --- |
+| Static Power             |     0.276 |          |           |                 |
+| Total                    |     4.096 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Vccint    |       1.000 |     2.509 |       2.451 |      0.058 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.084 |       0.056 |      0.028 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.035 |       0.011 |      0.023 |       NA    | Unspecified | NA         |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccpint   |       1.000 |     0.724 |       0.648 |      0.076 |       NA    | Unspecified | NA         |
+| Vccpaux   |       1.800 |     0.036 |       0.026 |      0.010 |       NA    | Unspecified | NA         |
+| Vccpll    |       1.800 |     0.017 |       0.014 |      0.003 |       NA    | Unspecified | NA         |
+| Vcco_ddr  |       1.500 |     0.354 |       0.352 |      0.002 |       NA    | Unspecified | NA         |
+| Vcco_mio0 |       3.300 |     0.003 |       0.002 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco_mio1 |       1.800 |     0.003 |       0.002 |      0.001 |       NA    | Unspecified | NA         |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                        | Action                                                                                                     |
++-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                               |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks         |                                                                                                            |
+| I/O nodes activity          | High       | User specified more than 95% of inputs         |                                                                                                            |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                   |                                                                                                            |
+|                             |            |                                                |                                                                                                            |
+| Overall confidence level    | Medium     |                                                |                                                                                                            |
++-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+------------------------+
+| Ambient Temp (C)      | 25.0                   |
+| ThetaJA (C/W)         | 11.5                   |
+| Airflow (LFM)         | 250                    |
+| Heat Sink             | none                   |
+| ThetaSA (C/W)         | 0.0                    |
+| Board Selection       | medium (10"x10")       |
+| # of Board Layers     | 8to11 (8 to 11 Layers) |
+| Board Temperature (C) | 25.0                   |
++-----------------------+------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------------------------------------+-----------------------------------------------------------------+-----------------+
+| Clock                               | Domain                                                          | Constraint (ns) |
++-------------------------------------+-----------------------------------------------------------------+-----------------+
+| clk_fpga_0                          | pynqz2_dpu_i/processing_system7_0/inst/FCLK_CLK0                |            10.0 |
+| clk_fpga_0                          | pynqz2_dpu_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]   |            10.0 |
+| clk_out_150M_pynqz2_dpu_clk_wiz_0_0 | pynqz2_dpu_i/clk_wiz_0/inst/clk_out_150M_pynqz2_dpu_clk_wiz_0_0 |             6.7 |
+| clk_out_300M_pynqz2_dpu_clk_wiz_0_0 | pynqz2_dpu_i/clk_wiz_0/inst/clk_out_300M_pynqz2_dpu_clk_wiz_0_0 |             3.3 |
+| clkfbout_pynqz2_dpu_clk_wiz_0_0     | pynqz2_dpu_i/clk_wiz_0/inst/clkfbout_pynqz2_dpu_clk_wiz_0_0     |            10.0 |
++-------------------------------------+-----------------------------------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++--------------------------+-----------+
+| Name                     | Power (W) |
++--------------------------+-----------+
+| pynqz2_dpu_wrapper       |     3.820 |
+|   pynqz2_dpu_i           |     3.820 |
+|     clk_wiz_0            |     0.103 |
+|       inst               |     0.103 |
+|     dpu_eu_0             |     2.458 |
+|       inst               |     2.458 |
+|     processing_system7_0 |     1.259 |
+|       inst               |     1.259 |
++--------------------------+-----------+
+
+
