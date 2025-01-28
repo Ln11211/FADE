@@ -21,11 +21,9 @@ The Board features the ZYNQ XC7Z020-1CLG400C SOC with
 
 ### Project Checklist
 
-- [x] Acquire AMD DPU 3.0 ip 
-- [x] Acquire Tul PYNQ Z2 board files
 - [x] DPU ip block design implementation
 - [x] DPU synthesis and Bitstream generation
-- [ ] DPU sd card image using Petalinux
+- [x] DPU sd card image using Petalinux
 - [ ] DL classifier training and quantization
 - [ ] DNNDK Optimization of DL model
 - [ ] Deployment on PYNQ-Z2
